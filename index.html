@@ -4,38 +4,8 @@
 <style>
 :root{--navy:#102c54;--blue:#1769aa;--cyan:#0e9fbb;--gold:#f0ad2e;--bg:#f3f6fb;--ink:#17243a;--muted:#66758b;--line:#dce5ef}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 system-ui,-apple-system,Segoe UI,Arial,sans-serif}.top{background:linear-gradient(120deg,#102c54,#1769aa 68%,#0e9fbb);color:#fff;padding:22px clamp(14px,3vw,36px);box-shadow:0 5px 18px #0b2a5030}.toprow{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{display:flex;gap:16px;align-items:center}.seal{width:88px;height:68px;object-fit:contain;background:#fff;border-radius:9px;padding:3px;box-shadow:0 2px 8px #07182a55}.top h1{font-size:clamp(20px,2.3vw,30px);line-height:1.2;margin:0 0 5px}.top p{margin:0;color:#d9e8fb}.effective-bar{background:#e8f2fc;color:#16345d;border-bottom:1px solid #c8dced;padding:9px clamp(14px,3vw,36px);font-weight:800;font-size:14px;text-align:center;letter-spacing:.2px}.effective-bar span{color:#0b6a8e}.actions{display:flex;gap:8px;flex-wrap:wrap}.wrap{max-width:1500px;margin:20px auto;padding:0 18px}.toolbar,.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 4px 16px #19385c08;margin-bottom:16px}.filters{display:grid;grid-template-columns:repeat(3,minmax(180px,1fr)) auto;gap:12px;align-items:end}.field label{display:block;font-size:12px;color:var(--muted);font-weight:700;margin-bottom:5px}.field select,.field input{width:100%;padding:10px;border:1px solid #cbd7e5;border-radius:9px;background:#fff;color:var(--ink)}button,.button{border:0;border-radius:9px;padding:10px 13px;font-weight:700;cursor:pointer;background:var(--blue);color:white}.btn-dark{background:#16345d}.btn-light{background:#e8f2fc;color:#144e83}.btn-warn{background:#a63b3b}.btn-gold{background:#edab25;color:#2a250e}.btn-sm{font-size:12px;padding:7px 10px}.status{font-size:12px;color:var(--muted);margin-top:9px}.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:16px}.kpi{border-radius:14px;padding:17px;color:#fff;min-height:112px;box-shadow:0 7px 18px #19385c18;cursor:pointer}.kpi:nth-child(1){background:linear-gradient(130deg,#1466a8,#2898c5)}.kpi:nth-child(2){background:linear-gradient(130deg,#6b42a2,#9d6bd0)}.kpi:nth-child(3){background:linear-gradient(130deg,#13795b,#22ae8a)}.kpi:nth-child(4){background:linear-gradient(130deg,#c47b16,#f0b72e);color:#33240b}.kpi .label{font-weight:700;opacity:.9}.kpi .num{font-size:clamp(25px,3vw,34px);font-weight:800;margin:8px 0 2px}.kpi small{opacity:.88}.panels{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel h2{font-size:17px;margin:0 0 4px;color:var(--navy)}.sub{font-size:12px;color:var(--muted);margin:0 0 12px}.tablewrap{overflow:auto;max-height:520px;border:1px solid var(--line);border-radius:9px}table{border-collapse:collapse;width:100%;font-size:12.5px;white-space:nowrap}th,td{padding:9px 10px;border-bottom:1px solid #e7edf4;text-align:left}th{position:sticky;top:0;background:#eaf2fb;color:#16345d;z-index:1;cursor:pointer}tbody tr:hover{background:#f4f9ff}.clickrow{cursor:pointer}.totals td{font-weight:800;background:#f0f5fa}.tabletools{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}.empty{text-align:center;padding:25px;color:var(--muted)}.footer{text-align:center;color:#718096;padding:16px;font-size:12px}.adminbox{display:none;background:#fff8e7;border:1px solid #f1d58b;border-radius:12px;padding:16px;margin-bottom:16px}.adminbox.open{display:block}.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.drop{border:1px dashed #a8bdd4;border-radius:10px;padding:12px;background:#fff}.drop input{max-width:100%;margin:8px 0}.modal{display:none;position:fixed;inset:0;background:#07182ac9;z-index:99;padding:3vh 3vw;align-items:center;justify-content:center}.modal.open{display:flex}.modalbox{background:white;border-radius:14px;width:min(1200px,100%);max-height:94vh;display:flex;flex-direction:column;overflow:hidden}.modalhead{padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line)}.modalbody{padding:16px;overflow:auto}.modalbody .tablewrap{max-height:65vh}.pill{display:inline-block;background:#e8f2fc;color:#174d7e;border-radius:20px;padding:4px 9px;font-size:11px;font-weight:800}.danger{color:#a52d2d;font-weight:700}.good{color:#15704f;font-weight:700}.smallnote{font-size:12px;color:#6b7787}.hidden{display:none!important}@media(max-width:900px){.filters{grid-template-columns:1fr 1fr}.kpis{grid-template-columns:1fr 1fr}.panels,.admin-grid{grid-template-columns:1fr}}@media(max-width:520px){.filters{grid-template-columns:1fr}.wrap{padding:0 10px}.kpis{gap:8px}.kpi{padding:12px;min-height:100px}.actions button{padding:8px}.top{padding:16px}}
 </style>
-<!-- Nagpur Region employee portal access gate -->
-<style id="npr-employee-access-style">
-html body{visibility:hidden!important}
-html body.npr-auth-ok{visibility:visible!important}
-#nprAuthChecking{visibility:visible!important;position:fixed!important;inset:0!important;z-index:2147483647!important;display:flex!important;align-items:center!important;justify-content:center!important;background:#f3f6fb!important;color:#14213d!important;font:16px Arial,sans-serif!important;text-align:center!important;padding:24px!important;box-sizing:border-box!important}
-</style>
-</head><body><script id="nprEmployeeDashboardAccessGate">
-(function(){
- 'use strict';
- var PORTAL="https://script.google.com/macros/s/AKfycbwGfQLoPhrb-RYfcvCNOFIlkluPEf64UvcIHMjNMDAfXTocNZSGtbf-Hw-tmv6EAmSi/exec";
- var TOKEN='nagpurEmployeePortalToken';
- var overlay=document.getElementById('nprAuthChecking');
- function showDashboard(){
-  function reveal(){
-   if(document.body)document.body.classList.add('npr-auth-ok');
-   if(overlay&&overlay.parentNode)overlay.parentNode.removeChild(overlay);
-  }
-  if(document.body)reveal();
-  else document.addEventListener('DOMContentLoaded',reveal,{once:true});
- }
- var token='';
- try{token=localStorage.getItem(TOKEN)||'';}catch(e){}
- if(token){
-  // The main portal already validated the employee. Do not revalidate on every
-  // static dashboard page; a transient Apps Script failure must not force login.
-  showDashboard();
-  return;
- }
- var returnTo=window.location.href;
- window.location.replace(PORTAL+'?returnTo='+encodeURIComponent(returnTo));
-})();
-</script>
+
+</head><body>
 <header class="top"><div class="toprow"><div class="brand"><img class="seal" id="indiaPostHeaderLogo" src="" alt="India Post — Dak Sewa Jan Sewa"><div><h1>BO AOF pending at AO - Monitoring</h1><p>Nagpur Postal Region • Department of Posts • Maharashtra Circle</p></div></div><div class="actions"><button id="adminToggle" class="btn-gold">Admin Login</button><button id="syncBtn" class="btn-light">Sync Google Sheets</button><button id="refreshBtn" class="btn-dark">Refresh</button></div></div></header>
 <div class="effective-bar" aria-live="polite">Report effective from 01/04/2024 to <span id="effectiveToDate">—</span></div>
 <main class="wrap">
